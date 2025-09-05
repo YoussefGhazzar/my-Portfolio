@@ -66,13 +66,15 @@
 
 <script setup>
 import { ref } from 'vue'
-
+import image1 from '../assets/images/image1.png'
+import image2 from '../assets/images/image2.png'
+import image3 from '../assets/images/image3.png'
 const projects = ref([
   {
     id: 1,
     title: 'Gestione Recource Humaines',
     description: "A desktop application built with JavaFX for managing human resources efficiently. The system allows administrators to manage employee records, track absences, and process payroll with automated calculations. It integrates with a relational database (via JDBC) to ensure data persistence",
-    image: '/src/assets/images/image1.png',
+    image: image1,
     technologies: ['JavaFx', 'CSS', 'MySQL'],
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com/YoussefGhazzar/GRH'
@@ -81,7 +83,7 @@ const projects = ref([
     id: 2,
     title: 'AI-Lead Project',
     description: "Advanced Artificial Intelligence Project (Laravel + Vue.js + Inertia + TailwindCSS)A modern web application integrating AI features with a seamless user experience. Built using Laravel for the backend, Vue.js and Inertia.js for dynamic frontend interactions, and TailwindCSS for a responsive, modern design  ",
-    image: '/src/assets/images/image2.png',
+    image: image2,
     technologies: ['Laravel', 'Vue.js', 'TailwindCSS','PostgreSQL','Inertia.js'],
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com/YoussefGhazzar/ai-lead-backend-laravel'
@@ -90,7 +92,7 @@ const projects = ref([
     id: 3,
     title: 'Portfolio Website',
     description: 'A sleek and responsive personal portfolio showcasing projects, technical skills, and development experience. Built with Vue.js and TailwindCSS, optimized for performance and accessibility ',
-    image: '/src/assets/images/image3.png',
+    image: image3,
     technologies: ['Vue.js', 'TailwindCSS', 'Vercel'],
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com/username/project'
