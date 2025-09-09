@@ -24,7 +24,7 @@
 
             <div>
               <h3 class="text-xl font-semibold mb-4">My Skills</h3>
-              <div class="flex flex-wrap gap-2">
+              <div class="flex flex-wrap gap-2 text-lg">
                 <span 
                   v-for="tech in technologies" 
                   :key="tech"

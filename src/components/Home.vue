@@ -20,6 +20,9 @@
         </p>
         <!-- githup Link -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button @click="downloadResume()"
+        class="bg-white text-black rounded-md font-bold py-1 sm: px-2 "
+        >download resume</button>
            <a
            
             href="https://github.com/YoussefGhazzar?tab=repositories"
@@ -31,9 +34,9 @@ class="inline-flex items-center justify-center px-8 py-3 border border-transpare
         </a>
           <!-- Contact -->
            <BaseButton @click="scrollToSection('contact')" text="Contact me" title="Contact Me"
-                            btnClass="px-5 py-2 text-sm sm:text-base border border-gray-700 text-white-900 font-semibold rounded-lg hover:bg-white hover:text-black
+                            btnClass="  text-sm sm:text-base px-5 py-2 border border-gray-700 text-white-900 font-semibold rounded-lg hover:bg-white hover:text-black
  " />
-
+        
          
         </div>
       </div>
@@ -78,4 +81,20 @@ const scrollToSection = (section) => {
     const target = document.getElementById(section);
     if (target) target.scrollIntoView({ behavior: 'smooth' });
 };
+
+const showDropdown = ref(false);
+
+function downloadResume() {
+  const fileName = "Youssef Ghazzar (1).pdf"; // your resume file
+  const filePath = `/${fileName}`; // assuming it's inside public/
+
+  const link = document.createElement("a");
+  link.href = filePath;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  showDropdown.value = false;
+}
 </script>

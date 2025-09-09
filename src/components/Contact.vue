@@ -108,20 +108,25 @@
     required
     rows="5"
     placeholder="Tell me about your project..."
-    class="w-full px-3 py-2 bg-background border border-border rounded-md 
+    class="w-full bg-slate-50 px-3 py-2  border border-border rounded-md 
            focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent 
-           resize-none transition-colors text-black"
+           resize-none transition-colors text-white"
   ></textarea>
 </div>
 
               
-              <button
-                type="submit"
-                :disabled="isSubmitting"
-                class="w-full bg-primary text-primary-foreground py-2 px-4 rounded-md hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-              >
-                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
-              </button>
+                              <button
+            type="submit"
+            :disabled="isSubmitting"
+            class="w-full bg-primary text-primary-foreground py-2 px-4 rounded-md 
+                  hover:bg-white hover:text-black 
+                  focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 
+                  disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          >
+            {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+          </button>
+
+
             </form>
           </div>
         </div>

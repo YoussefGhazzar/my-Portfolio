@@ -12,7 +12,7 @@
           <div 
             v-for="project in projects" 
             :key="project.id"
-            class="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300"
+            class="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300"
           >
             <div class="aspect-video bg-muted relative overflow-hidden">
               <img 

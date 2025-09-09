@@ -7,6 +7,7 @@
      <section id="about" class="mt-10">
         <About />
      </section>
+     
      <section id="projects" class="mt-5">
         <Projects />
      </section>
@@ -22,4 +23,5 @@ import Home from '@/components/Home.vue';
 import About from '@/components/About.vue';
 import Projects from '@/components/Projects.vue';
 import Contact from '@/components/Contact.vue';
+import SkillsSection from '@/components/SkillsSection.vue';
 </script>
