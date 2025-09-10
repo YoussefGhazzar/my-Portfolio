@@ -85,7 +85,7 @@ const scrollToSection = (section) => {
 const showDropdown = ref(false);
 
 function downloadResume() {
-  const fileName = "Youssef Ghazzar (1).pdf"; // your resume file
+  const fileName = "Youssef_Ghazzar_Developer_fr .pdf"; // your resume file
   const filePath = `/${fileName}`; // assuming it's inside public/
 
   const link = document.createElement("a");
